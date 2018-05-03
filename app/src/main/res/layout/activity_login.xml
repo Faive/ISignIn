@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="online.inkwill.isignin.V.LoginActivity">
+    <EditText
+        android:id="@+id/UserEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:hint="UserName"/>
+
+    <EditText
+        android:id="@+id/PasswordEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123456"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/UserEdt"/>
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/PasswordEdt"/>
+    <Button
+        android:id="@+id/BtnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_toRightOf="@id/BtnLogin"
+        android:layout_below="@+id/PasswordEdt"/>
+
+
+</RelativeLayout>
